@@ -10,6 +10,7 @@
 \author{Daniel Schierbeck \and Lasse Carames \and Andreas Hjordt Jensen}
 
 \newcommand{\mtx}[1]{\uuline{#1}}
+\setlength{\parindent}{0cm}
 
 \begin{document}
 
@@ -33,6 +34,24 @@ $$
 defineres determinanten af $\mtx{A}$ som tallet
 $$
 \det{\mtx{A}} = a_{11}a_{22} - a_{12}a_{21}
+$$
+
+
+\subsubsection{$3 \times 3$ matrix}
+
+For en $3 \times 3$ matrix
+$$
+\mtx{A} =
+\begin{gmatrix}[p]
+    a_{11} & a_{12} & a_{13} \\
+    a_{21} & a_{22} & a_{23} \\
+    a_{31} & a_{32} & a_{33}
+\end{gmatrix}
+$$
+
+defineres determinanten af $\mtx{A}$ som tallet
+$$
+\det{\mtx{A}} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} - a_{13}a_{22}a_{31} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33}
 $$
 
 \end{document}
