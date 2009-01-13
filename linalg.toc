@@ -1,0 +1,5 @@
+\select@language {danish}
+\contentsline {section}{Matricer}{1}
+\contentsline {subsection}{Determinant}{1}
+\contentsline {subsubsection}{$2 \times 2$ matrix}{1}
+\contentsline {subsubsection}{$3 \times 3$ matrix}{1}
