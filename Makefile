@@ -100,7 +100,7 @@ define manconf
 	mandeps=`if test -r $(basename $@).cnf ; then cat $(basename $@).cnf |tr -d '\n\r' ; fi`
 endef
 
-all 	: $(TRG)
+all 	: $(PDF)
 
 .PHONY	: all show clean ps pdf showps veryclean
 
