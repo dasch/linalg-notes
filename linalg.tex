@@ -3,9 +3,13 @@
 
 \usepackage[danish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{ulem}
+\usepackage{gauss}
 
 \title{Noter til Lineær Algebra}
 \author{Daniel Schierbeck}
+
+\newcommand{\mtx}[1]{\uuline{#1}}
 
 \begin{document}
 
@@ -14,5 +18,21 @@
 \section{Matricer}
 
 \subsection{Determinant}
+
+\subsubsection{$2 \times 2$ matrix}
+
+For en $2 \times 2$ matrix
+$$
+\mtx{A} =
+\begin{gmatrix}[p]
+    a_{11} & a_{12} \\
+    a_{21} & a_{22}
+\end{gmatrix}
+$$
+
+defineres determinanten af $\mtx{A}$ som tallet
+$$
+\det{\mtx{A}} = a_{11}a_{22} - a_{12}a_{21}
+$$
 
 \end{document}
