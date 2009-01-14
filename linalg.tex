@@ -58,13 +58,57 @@ $$
 \det{\mtx{A}} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33}
 $$
 
-\section{Lineære ligningssystemer}
-Ex på forskellige måder et lineært ligningssytem kan præsenteres i en opgave.
+
 \subsection{Række- og søjleoperationer}
-\begin{itemize}
-  \item Type M: Mulitplikation af en række med et tal c $\neq$ 0.
-  \item Type B: Ombytning af to rækker.
-  \item Type S: Addition af et multiplum af en række til en anden række.
-\end{itemize}
+
+\subsubsection{Type M: multiplikation af en række med et tal $c \neq 0$}
+\begin{eqnarray*}
+\begin{gmatrix}[p]
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+\rowops
+    \mult{0}{\cdot 3}
+\end{gmatrix} \longrightarrow
+\begin{gmatrix}[p]
+    3 & 6 & 9 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+\end{gmatrix}
+\end{eqnarray*}
+
+
+\subsubsection{Type B: ombytning af to rækker}
+\begin{eqnarray*}
+\begin{gmatrix}[p]
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+\rowops
+    \swap{0}{1}
+\end{gmatrix} \longrightarrow
+\begin{gmatrix}[p]
+    4 & 5 & 6 \\
+    1 & 2 & 3 \\
+    7 & 8 & 9
+\end{gmatrix}
+\end{eqnarray*}
+
+
+\subsubsection{Type S: addition af et multiplum af en række til en anden række}
+\begin{eqnarray*}
+\begin{gmatrix}[p]
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+\rowops
+    \add[2]{0}{1}
+\end{gmatrix} \longrightarrow
+\begin{gmatrix}[p]
+    1 & 2 & 3 \\
+    5 & 7 & 9 \\
+    7 & 8 & 9
+\end{gmatrix}
+\end{eqnarray*}
 
 \end{document}
