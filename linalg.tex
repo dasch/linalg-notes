@@ -10,7 +10,9 @@
 \author{Daniel Schierbeck \and Lasse Caramés \and Andreas Hjordt Jensen}
 
 \newcommand{\mtx}[1]{\uuline{#1}}
+\renewcommand{\rowmultlabel}[1]{\times\,#1}
 \setlength{\parindent}{0cm} % Don't indent paragraphs
+\setlength{\rowarrowsep}{0pt}
 \setcounter{secnumdepth}{0} % Don't show heading numbers
 \setcounter{tocdepth}{2}    % Only show \section and \subsection headings in the ToC
 
@@ -68,7 +70,7 @@ $$
     4 & 5 & 6 \\
     7 & 8 & 9
 \rowops
-    \mult{0}{\cdot 3}
+    \mult{0}{3}
 \end{gmatrix} \longrightarrow
 \begin{gmatrix}[p]
     3 & 6 & 9 \\
