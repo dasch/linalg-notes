@@ -21,6 +21,11 @@
 
 \renewcommand{\vec}[1]{\uline{#1}}
 
+\newcommand{\rg}{\textrm{rg}\,}
+
+\newcommand{\definition}[1]{\textbf{Definition #1.}\marginpar{\small (def. #1)}}
+\newcommand{\theorem}[1]{\textbf{Sætning #1.}\marginpar{\small (sætn. #1)}}
+
 % Don't indent paragraphs
 \setlength{\parindent}{0cm}
 
@@ -165,11 +170,23 @@ $$
 \vec{x} \neq \vec{o} \quad \textrm{og} \quad f(\vec{x}) = \lambda{}\vec{x}
 $$
 
+
 \subsection{Baser}
 
 \subsubsection{Række- og søjlerum}
 En basis for rækkerummet er givet ved de rækker i rækkeechelonformen der ikke er nul-rækker.
 En basis for søjlerummet findes ved at de ledende variable.
 
+
+\subsection{Rang}
+
+\definition{4.8.1} Ved \textit{rangen} $\rg f$ af en lineær afbildning $f : U \rightarrow V$ forstås dimensionen af billedrummet $f(U)$, altså
+$$
+\rg f =  \dim f(U)
+$$
+
+\definition{4.8.5} Rangen af en matrix ændres ikke ved række- og søjleoperationer.
+
+\theorem{4.8.3} Hvis $\mtx{A}$ er en trappematrix, er $\rg \mtx{A}$ lig med antallet af trin i $\mtx{A}$.
 
 \end{document}
